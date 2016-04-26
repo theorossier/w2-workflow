@@ -1,0 +1,87 @@
+.footer {
+  margin: 75px auto 35px;
+  max-width: @siteWidth;
+  font-size: 13px;
+  text-align: center;
+
+  @media @large {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer--backToTop {
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: @green-hint;
+
+  @media @large {
+    order: 1;
+  }
+
+  &:before {
+    content: '↑ ';
+  }
+}
+
+.footer--copyright {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.footer--social {
+  display: flex;
+  justify-content: center;
+
+  @media @large {
+    margin-top: 10px;
+  }
+
+  a {
+    display: block;
+    margin: 0 10px;
+    overflow: hidden;
+    background-position: center bottom;
+    background-size: cover;
+    transition: background-position 0.5s;
+
+    &:hover {
+      @media @large {
+        background-position: center top;
+      }
+    }
+  }
+}
+
+.footer--twitter {
+  margin-top: 3px;
+  width: 30px;
+  height: 25px;
+  background-image: url('../img/twitter.png');
+
+  @media @retina {
+    background-image: url('../img/retina/twitter.png');
+  }
+}
+
+.footer--facebook {
+  width: 30px;
+  height: 31px;
+  background-image: url('../img/facebook.png');
+
+  @media @retina {
+    background-image: url('../img/retina/facebook.png');
+  }
+}
+
+.footer--contact,
+.footer--legals {
+  display: block;
+  margin-top: 15px;
+}
+
+.footer--legals {
+  text-decoration: underline;
+}

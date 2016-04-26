@@ -1,0 +1,89 @@
+.article--header {
+  text-align: center;
+}
+
+.article--image {
+  width: 100%;
+  height: 275px;
+  background-image: url("../img/article-veille-small.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  @media only screen and (min-width: 361px) {
+    background-image: url("../img/article-veille-med.jpg");
+  }
+
+  @media @medium {
+    height: 350px;
+  }
+
+  @media only screen and (min-width: 701px) {
+    background-image: url("../img/article-veille-large.jpg");
+  }
+
+  @media @large {
+    background-image: url("../img/article-veille-med.jpg");
+  }
+}
+
+.article--category {
+  display: inline-block;
+  position: relative;
+  top: -45px;
+  padding: 15px;
+  font-family: "Jaapokki";
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: @white;
+}
+
+.article--content {
+  margin-top: -10px;
+  padding: 0px 20px;
+
+  @media @medium {
+    padding: 0;
+  }
+}
+
+.article--title {
+  margin-bottom: 20px;
+  font-family: "Jaapokki";
+  font-size: 32px;
+  line-height: 1.2em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.article--excerpt {
+  line-height: 1.4em;
+}
+
+.article--footer {
+  position: relative;
+  margin-top: 25px;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.article--link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &:after {
+    content: ' >';
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: @green-aquamarine;
+  }
+}

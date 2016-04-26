@@ -1,0 +1,53 @@
+.about {
+  display: none;
+
+  @media @large {
+    display: block;
+    margin-left: 100px;
+  }
+}
+
+.about--title {
+  margin: 20px 0;
+  font-family: "Jaapokki";
+  font-size: 24px;
+}
+
+.about--team {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.about--social {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    transition: background-position 0.5s;
+    background-size: cover;
+
+    &:hover {
+      background-position: center bottom;
+    }
+  }
+}
+
+.about--twitter {
+  background-image: url("../img/twitter-square.png");
+
+  @media @retina {
+    background-image: url('../img/retina/twitter-square.png');
+  }
+}
+
+.about--facebook {
+  background-image: url("../img/facebook-square.png");
+
+  @media @retina {
+    background-image: url('../img/retina/facebook-square.png');
+  }
+}

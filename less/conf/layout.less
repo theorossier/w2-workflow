@@ -1,0 +1,23 @@
+@siteWidth: 1040px;
+
+html {
+  color: @grey-tundora;
+  font-family: "Arial", "Sans Serif";
+}
+
+body {
+  font-size: 18px;
+}
+
+#main {
+  max-width: @siteWidth;
+
+  @media @medium {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @media @large {
+    display: flex;
+  }
+}
